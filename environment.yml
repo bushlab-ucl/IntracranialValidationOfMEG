@@ -1,0 +1,16 @@
+name: ivmeg
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - mne=1.13.2
+  - numpy=2.5.3
+  - scipy=1.18.1
+  - pandas=3.0.6
+  - nibabel=5.4.2
+  - matplotlib=3.11.2
+  - pyyaml=6.0.3
+  - pip
+  - pip:
+      - osl-dynamics @ git+https://github.com/OHBA-analysis/osl-dynamics@b64c6eb0ab7befd3fd1d32fa813793e6751da0a6
+      - -e .
